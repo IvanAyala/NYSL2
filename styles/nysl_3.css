@@ -1,189 +1,414 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
-body, html {
-  height: 100%;
-  margin: 0;
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
 }
 
 header {
-  height: 450px;
+    height: 450px;
 }
 
 .bg {
-  background-image: url(../assets/Images/pelota_futbol.jpeg);
-  height: 300px;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin: 0;
-  background-position: 0px, -800px;
+    background-image: url(../assets/Images/pelota_futbol.jpeg);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+    background-position: 0px, -800px;
 }
 
 #Logo {
-  height: 200px;
-  width: 200px;
-  position: absolute;
-  top: 50px;
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto; 
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .MainTitle {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 nav {
-  position: absolute;
-  top: 250px;
-  right:0px; 
-  font-size: 12pt;
-  color: white;
-  font-family: tahoma;
-  margin-right: auto; 
-  margin-left: auto;
-  font-weight: bold;
-  background-color: black;
-  padding:7px 20px 10px 7px; 
-  border: solid 2px black;
-  border-radius: 5px 0px 0px 5px;
+    position: absolute;
+    top: 256px;
+    right: 0px;
+    font-size: 10pt;
+    color: white;
+    font-family: tahoma;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: bold;
+    background-color: black;
+    padding: 7px 20px 10px 4px;
+    border-radius: 5px 0px 0px 5px;
 }
 
 a {
-  color: white;
-  margin-left: 20px; 
-  text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
 }
 
 nav a:visited {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 #UpcomingEvents {
-  font-size: 20pt;
-  font-family: helvetica;
-  font-weight: bolder;
- text-align: center;
- padding-top: 40px;
+    font-size: 20pt;
+    font-family: helvetica;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#nysl-game-information-title {
+    font-size: 20pt;
+    font-family: helvetica;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 40px;
 }
 
 #AboutNYSL {
-  font-size: 20pt;
-  font-family: helvetica;
-  font-weight: bolder;
- text-align: center;
- padding-top: 40px;
+    font-size: 20pt;
+    font-family: helvetica;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 40px;
 }
 
 #ContactUs {
-  font-size: 20pt;
-  font-family: helvetica;
-  font-weight: bolder;
- text-align: center;
- padding-top: 40px;
+    font-size: 20pt;
+    font-family: helvetica;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 40px;
 }
 
 .Schedule {
-  font-family: helvetica;
-  margin-left: 10%;
-  margin-bottom: 20px;
+    font-family: helvetica;
+    margin-left: 10%;
+    margin-bottom: 20px;
 }
 
 .Schedule h3 {
-  font-weight: bold;
-  padding-bottom: 5px;
+    font-weight: bold;
+    padding-bottom: 5px;
 }
 
 .SectionAbout {
-  font-family: helvetica;
-  margin-left: 10%;
-  margin-bottom: 20px;
-  position: relative;
+    font-family: helvetica;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    position: relative;
 }
 
 .SectionAbout h2 {
-  font-weight: bold;
-  margin-bottom: 5px; 
-  margin-top: 0;
-  padding-top: 0;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .SectionAbout p {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
-
-
 #emaillink {
-  margin: 0;
-  color: grey;
+    margin: 0;
+    color: grey;
 }
 
 .ContactP {
-  font-family: helvetica;
-  text-align: center;
-  margin-bottom: 10px;
+    font-family: helvetica;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-.Mission, .Vision, .GeneInfo {
-  display: inline-block;
-  width: 20%;
-  position: absolute;
+.Mission,
+.Vision,
+.GeneInfo {
+    display: inline-block;
+    width: 20%;
+    position: absolute;
 }
 
 .Mission {
-  left: 10%;
+    left: 10%;
 }
 
 .Vision {
-  left: 37%;
+    left: 37%;
 }
 
 .GeneInfo {
-  left: 63%;
+    left: 63%;
 }
 
+.bolding {
+    font-weight: bold;
+    margin-top: 10px;
+}
 
+h4 {
+    font-family: helvetica;
+    font-size: 18px;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.field-list,
+.bench-areas {
+    list-style-type: lower-alpha;
+}
+
+.circle-list {
+    list-style-type: circle;
+}
+
+#rules-header {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 70px;
+}
+
+#rules-text {
+    margin-left: 25%;
+    width: 50%;
+    margin-bottom: 100px;
+}
+
+#rules-text h4 {
+    font-weight: bolder;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#rules-text li {
+    margin-bottom: 3px;
+}
+
+#fall-schedule-title {
+    font-family: helvetica;
+    font-size: 15pt;
+    font-weight: bold;
+    margin-left: 16%;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+#saturday-remark {
+  font-family: georgia;
+  font-style: italic;
+  margin-left: 16%;
+  margin-bottom: 50px;
+}
+
+.section-table {
+  margin-left: 16%;
+}
+
+tr {
+  margin-left: 30px;
+}
+
+tr td:first-child {
+  padding-left: 45px;
+}
+
+th {
+  font-weight: bold;
+  font-family: tahoma;
+  font-size: 18pt;
+  text-decoration: underline;
+  padding-right: 80px;
+
+}
+
+td {
+   padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16pt;
+  font-family: tahoma;
+}
+
+table {
+  margin-bottom: 50px;
+}
+
+#addresses-games td {
+  padding-right: 50px;
+}
+
+#addresses-games {
+  margin-bottom: 50px;
+}
+
+.footer-randall, #footer-game {
+  font-family: helvetica;
+  font-size: 16pt;
+  width: 70%;
+  margin-bottom: 20px;
+  margin-left: 5%;
+
+}
+
+#footer-game p {
+  margin-bottom: 10px;
+}
+
+.footer-end {
+  margin-bottom: 50px;
+  display: inline-block;
+  font-family: helvetica;
+  margin-left: 47px;
+  font-size: 16pt;
+}
