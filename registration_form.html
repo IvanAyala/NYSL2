@@ -5,6 +5,7 @@
     <title>Registration Form</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="styles/nysl_3.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 </head>
 
 <body>
@@ -23,29 +24,33 @@
         <a href="gameinfo.html">Game Information</a>
         <a href="">Registration</a>
     </nav>
-    <form action="show_data.html" method="get">
-        <label for="first-name">First Name</label>
-        <input type="text" name="first-name" id="first-name">
-        <label for="last-name">Last Name</label>
-        <input type="text" name="last-name" id="last-name">
+    <form action="show_data.html" method="get" id="registration-form">
+        <div class="container-form">
+            <label for="first-name" class="bolding">First Name</label>
+            <input type="text" name="first-name" id="first-name">
+        </div>
+        <div class="container-form">
+            <label for="last-name" class="bolding">Last Name</label>
+            <input type="text" name="last-name" id="last-name">
+        </div>
         <br>
-        <label for="street-address">Street Address</label>
+        <label for="street-address" class="bolding">Street Address</label>
         <input type="text" name="street-address" id="street-address">
         <br>
-        <label for="City">City</label>
+        <label for="City" class="bolding">City</label>
         <input type="text" name="City" id="City">
-        <label for="zip-code">Zip Code</label>
+        <label for="zip-code" class="bolding">Zip Code</label>
         <input type="text" name="Zip Code" id="zip-code">
         <br>
-        <label for="birth-date">Birth Date</label>
+        <label for="birth-date" class="bolding">Birth Date</label>
         <input type="text" name="birth-date" id="birth-date">
-        <h4 id="gender-title">Gender: </h4>
+        <h4 id="gender-title"><span class="bolding">Gender: </span></h4>
         <label for="gendermale">Male</label>
         <input type="radio" name="gender" value="Male" id="gendermale">
         <label for="genderfemale">Female</label>
         <input type="radio" name="gender" value="Female" id="genderfemale">
         <br>
-        <h4 id="grade-title">Grade:   </h4>
+        <h4 id="grade-title"><span class="bolding">Grade:</span></h4>
         <div class="several-options">
             <label for="Gradepres">Pre-School</label>
             <input type="radio" name="Grade" value="Pre-School" id="Gradepres">
@@ -79,11 +84,12 @@
         <label for="contact-email">Contact Email</label>
         <input type="text" name="contact-email" id="contact-email">
         <br>
-        <h4><span class="bolding">Which elementary school do you live near?</span></h4>
+        <h4 class="form-title">Which elementary school do you live near?</h4>
         <h3 class="closest-school-titles">First closest school:</h3>
         <h3 class="closest-school-titles">Second closest School:</h3>
         <br>
         <select name="first-school">
+            <option value=""></option>
             <option value="aj-katzenmaier">AJ Katzenmaier</option>
             <option value="greenbay">Greenbay</option>
             <option value="howard-a-yeager">Howard A Yeager</option>
@@ -91,7 +97,8 @@
             <option value="north-elementary">North Elementary</option>
             <option value="south-elementary">South Elementary</option>
         </select>
-        <select name="second_school">
+        <select name="second-school">
+            <option value=""></option>
             <option value="aj-katzenmaier">AJ Katzenmaier</option>
             <option value="greenbay">Greenbay</option>
             <option value="howard-a-yeager">Howard A Yeager</option>
@@ -99,14 +106,14 @@
             <option value="north-elementary">North Elementary</option>
             <option value="south-elementary">South Elementary</option>
         </select>
-        <h4><span class="bolding">What position(s) do you usually play?</span> (check all that apply)</h4>
+        <h4 class="form-title">What position(s) do you usually play?<span class="antibolding">(check all that apply)</span></h4>
         <div class="several-options">
-            <label for="field-positionforward">Forward</label>
-            <input type="checkbox" name="field-position" value="Forward" id="field-positionforward">
+            <label for="field-position-forward">Forward</label>
+            <input type="checkbox" name="field-position" value="Forward" id="field-position-forward">
         </div>
         <div class="several-options">
-            <label for="field-positiondefense">Defense</label>
-            <input type="checkbox" name="field-position" value="Defense" id="field-positiondefense">
+            <label for="field-position-defense">Defense</label>
+            <input type="checkbox" name="field-position" value="Defense" id="field-position-defense">
         </div>
         <div class="several-options">
             <label for="field-position-midfield">Midfield</label>
@@ -121,55 +128,88 @@
             <input type="checkbox" name="Uniform" value="Yes" id="Uniform">
             <label for="Uniform">Already have an uniform?</label>
         </div>
-        <h4 class="uniform-sizes-titles">Jersey Size:</h4>
-        <h4 class="uniform-sizes-titles">Shorts Size:</h4>
-        <br>
-        <div id="jersey-size-list">
-            <div class="size-list-options">
-            <label for="jersey-size-ys">Youth Small</label>
-            <input type="radio" name="jersey-size" value="YouthSmall" id="jersey-size-ys">
-            </div>
-            <label for="jersey-size-ym">Youth Medium</label>
-            <input type="radio" name="jersey-size" value="YouthMedium" id="jersey-size-ym">
-            <br>
-            <label for="jersey-size-yl">Youth Large</label>
-            <input type="radio" name="jersey-size" value="YouthLarge" id="jersey-size-yl">
-            <div class="size-list-options">
-            <label for="jersey-size-s">Small</label>
-            <input type="radio" name="jersey-size" value="Small" id="jersey-size-s">
-            </div>
-            <label for="jersey-size-m">Medium</label>
-            <input type="radio" name="jersey-size" value="Medium" id="jersey-size-m">
-            <br>
-            <div class="size-list-options">
-            <label for="jersey-size-l">Large</label>
-            <input type="radio" name="jersey-size" value="Large" id="jersey-size-l">
-            </div>
-            <label for="jersey-size-xl">Extra-Large</label>
-            <input type="radio" name="jersey-size" value="Extra-Large" id="jersey-size-xl">
-        </div>
-        <div id="shorts-size-list">
-            <div class="size-list-options">
-            <label for="shorts-size-ys">Youth Small</label>
-            <input type="radio" name="shorts-size" value="YouthSmall" id="shorts-size-ys">
-            </div>
-            <label for="shorts-size-ym">Youth Medium</label>
-            <input type="radio" name="shorts-size" value="YouthMedium" id="shorts-size-ym">
-            <label for="shorts-size-yl">Youth Large</label>
-            <input type="radio" name="shorts-size" value="YouthLarge" id="shorts-size-yl">
-            <div class="size-list-options">
-            <label for="shorts-size-s">Small</label>
-            <input type="radio" name="shorts-size" value="Small" id="shorts-size-s">
-            </div>
-            <label for="shorts-size-m">Medium</label>
-            <input type="radio" name="shorts-size" value="Medium" id="shorts-size-m">
-            <div class="size-list-options">
-            <label for="shorts-size-l">Large</label>
-            <input type="radio" name="shorts-size" value="Large" id="shorts-size-l">
-            </div>
-            <label for="shorts-size-xl">Extra-Large</label>
-            <input type="radio" name="shorts-size" value="Extra-Large" id="shorts-size-xl">
-        </div>
+        <table id="jersey-size-list" class="clothes-sizes-tables">
+            <tr>
+                <th colspan="2" class="uniform-sizes-titles">Jersey Size:</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="jersey-size" value="YouthSmall" id="jersey-size-ys">
+                    <label for="jersey-size-ys">Youth Small</label>
+                </td>
+                <td>
+                    <input type="radio" name="jersey-size" value="YouthMedium" id="jersey-size-ym">
+                    <label for="jersey-size-ym">Youth Medium</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="jersey-size" value="YouthLarge" id="jersey-size-yl">
+                    <label for="jersey-size-yl">Youth Large</label>
+                </td>
+                <td>
+                    <input type="radio" name="jersey-size" value="Small" id="jersey-size-s">
+                    <label for="jersey-size-s">Small</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="jersey-size" value="Medium" id="jersey-size-m">
+                    <label for="jersey-size-m">Medium</label>
+                </td>
+                <td>
+                    <input type="radio" name="jersey-size" value="Large" id="jersey-size-l">
+                    <label for="jersey-size-l">Large</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="jersey-size" value="Extra-Large" id="jersey-size-xl">
+                    <label for="jersey-size-xl">Extra-Large</label>
+                </td>
+            </tr>
+        </table>
+        <table id="shorts-size-list" class="clothes-sizes-tables">
+            <tr>
+                <th colspan="2" class="uniform-sizes-titles">Shorts Size:</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="shorts-size" value="YouthSmall" id="shorts-size-ys">
+                    <label for="shorts-size-ys">Youth Small</label>
+                </td>
+                <td>
+                    <input type="radio" name="shorts-size" value="YouthMedium" id="shorts-size-ym">
+                    <label for="shorts-size-ym">Youth Medium</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="shorts-size" value="YouthLarge" id="shorts-size-yl">
+                    <label for="shorts-size-yl">Youth Large</label>
+                </td>
+                <td>
+                    <input type="radio" name="shorts-size" value="Small" id="shorts-size-s">
+                    <label for="shorts-size-s">Small</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="shorts-size" value="Medium" id="shorts-size-m">
+                    <label for="shorts-size-m">Medium</label>
+                </td>
+                <td>
+                    <input type="radio" name="shorts-size" value="Large" id="shorts-size-l">
+                    <label for="shorts-size-l">Large</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="shorts-size" value="Extra-Large" id="shorts-size-xl">
+                    <label for="shorts-size-xl">Extra-Large</label>
+                </td>
+            </tr>
+        </table>
         <h4 class="form-title">Permission to Play</h4>
         <p id="legal-paragraph">I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League” accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL sponsored activities, which transportation. By entering my name below, I hereby agree and authorize the above. In addition, by signing below, I also ack nowledge that I have read the cancellation policy and agree to its terms. </p>
         <label for="parent-guardian-signature">Parent/Guardian Signature</label>
@@ -177,8 +217,11 @@
         <label for="Date">Date</label>
         <input type="text" name="Date" id="Date">
         <br>
-        <input type="submit" name="Submit" value="Submit" id="submit-button">
+
+        <div id="div-submit"><input type="submit" name="Submit" value="Submit" id="submit-button"></div>
     </form>
+
+    <script type="text/javascript" src="validate_registration.js"></script>
 </body>
 
 </html>

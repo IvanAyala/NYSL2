@@ -131,6 +131,9 @@ table {
     border-spacing: 0;
 }
 
+
+/* General CSS */
+
 body,
 html {
     height: 100%;
@@ -148,6 +151,7 @@ header {
     background-size: 100%;
     margin: 0;
     background-position: 0px, -800px;
+    min-width: 900px;
 }
 
 #Logo {
@@ -167,8 +171,8 @@ header {
 
 nav {
     position: absolute;
-    top: 256px;
-    right: 0px;
+    top: 288px;
+    right: 0;
     font-size: 10pt;
     color: white;
     font-family: tahoma;
@@ -191,31 +195,62 @@ nav a:visited {
     text-decoration: none;
 }
 
+.bolding {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.antibolding {
+    font-weight: normal;
+}
+
+h4 {
+    font-family: helvetica;
+    font-size: 18px;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-right: auto;
+    margin-left: auto;
+    width: 600px;
+    min-width: 600px;
+}
+
+label {
+    font-family: arial;
+    font-size: 12pt;
+}
+
+form input {
+    margin-bottom: 7px;
+    border-top: none;
+border-left: none;
+
+}
+
+select {
+    margin-left: 13%;
+    margin-right: 13%;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+
+/* Index */
+
 #UpcomingEvents {
-    font-size: 20pt;
-    font-family: helvetica;
-    font-weight: bolder;
-    text-align: center;
-    padding-top: 40px;
-}
-
-#nysl-game-information-title {
-    font-size: 20pt;
-    font-family: helvetica;
-    font-weight: bolder;
-    text-align: center;
-    padding-top: 40px;
-}
-
-#AboutNYSL {
-    font-size: 20pt;
-    font-family: helvetica;
-    font-weight: bolder;
-    text-align: center;
-    padding-top: 40px;
-}
-
-#ContactUs {
     font-size: 20pt;
     font-family: helvetica;
     font-weight: bolder;
@@ -234,6 +269,39 @@ nav a:visited {
     padding-bottom: 5px;
 }
 
+
+/* Contact Site */
+
+#ContactUs {
+    font-size: 20pt;
+    font-family: helvetica;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#emaillink {
+    margin: 0;
+    color: grey;
+}
+
+.ContactP {
+    font-family: helvetica;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+/* About */
+
+#AboutNYSL {
+    font-size: 20pt;
+    font-family: helvetica;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 40px;
+}
+
 .SectionAbout {
     font-family: helvetica;
     margin-left: 10%;
@@ -250,17 +318,6 @@ nav a:visited {
 
 .SectionAbout p {
     margin-bottom: 20px;
-}
-
-#emaillink {
-    margin: 0;
-    color: grey;
-}
-
-.ContactP {
-    font-family: helvetica;
-    text-align: center;
-    margin-bottom: 10px;
 }
 
 .Mission,
@@ -283,27 +340,8 @@ nav a:visited {
     left: 63%;
 }
 
-.bolding {
-    font-weight: bold;
-    margin-top: 10px;
-}
 
-h4 {
-    font-family: helvetica;
-    font-size: 18px;
-}
-
-ol {
-    list-style-type: decimal;
-    padding-left: 20px;
-    margin-bottom: 20px;
-}
-
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-bottom: 20px;
-}
+/* Rules */
 
 .field-list,
 .bench-areas {
@@ -324,6 +362,7 @@ ul {
     margin-left: 25%;
     width: 50%;
     margin-bottom: 100px;
+    font-family: times;
 }
 
 #rules-text h4 {
@@ -333,7 +372,8 @@ ul {
 }
 
 #rules-text li {
-    margin-bottom: 3px;
+    margin-bottom: 5px;
+    font-family: times;
 }
 
 #fall-schedule-title {
@@ -354,17 +394,18 @@ ul {
 
 .section-table {
     margin-left: 16%;
+    margin-right: 16%;
 }
 
-tr {
+#game-info-general tr {
     margin-left: 30px;
 }
 
-tr td:first-child {
+#game-info-general tr td:first-child {
     padding-left: 45px;
 }
 
-th {
+#game-info-general th {
     font-weight: bold;
     font-family: tahoma;
     font-size: 18pt;
@@ -372,14 +413,14 @@ th {
     padding-right: 80px;
 }
 
-td {
+#game-info-general td {
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 16pt;
     font-family: tahoma;
 }
 
-table {
+#game-info-general table {
     margin-bottom: 50px;
 }
 
@@ -412,39 +453,59 @@ table {
     font-size: 16pt;
 }
 
-form {
-    margin-left: 25%;
+.list-inside-list {
+    list-style-type: none;
 }
 
-label {
-    font-family: arial;
-    font-size: 12pt;
+
+/* Game Info */
+
+#nysl-game-information-title {
+    font-size: 20pt;
+    font-family: helvetica;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 40px;
 }
 
-form input {
-    margin-bottom: 7px;
-}
+
+/* Registration */
+
+
 
 #street-address {
-    width: 403px;
+    width: 77.6%;
+    margin-bottom: 20px;
 }
 
 #first-name {
-    margin-right: 50px;
+    width: 190px;
+    margin-bottom: 20px;
+margin-right: 10px;
+
+
+}
+
+#last-name {
+    width: 200px;
 }
 
 #City {
-    margin-right: 112px;
+    width: 51.8%;
+    margin-right: 2%;
+    margin-bottom: 20px;
 }
 
 #gender-title,
 #grade-title {
     margin-right: 15px;
     display: inline-block;
+    margin-bottom: 20px;
 }
 
 #birth-date {
     margin-right: 65px;
+    margin-bottom: 20px;
 }
 
 .several-options {
@@ -453,45 +514,39 @@ form input {
 }
 
 #parent-guardian {
-    width: 388px;
+    width: 77%;
+    margin-bottom: 20px;
 }
 
 .closest-school-titles {
     font-family: arial;
     font-size: 10pt;
     display: inline-block;
-    margin-right: 5%;
-    margin-left: 10%;
-    margin-top: 5px;
-}
-
-select {
-    margin-left: 10%;
-    margin-right: 5%;
-    margin-bottom: 20px;
+    margin-right: 13%;
+    margin-left: 13%;
     margin-top: 5px;
 }
 
 #already-uniform-title {
     font-family: arial;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 14pt;
     font-weight: bold;
 }
 
 .uniform-sizes-titles {
-    display: inline-block;
+    text-align: left;
     font-size: 12pt;
-    margin-bottom: 5px;
-    margin-right: 200px;
+    padding-bottom: 10px;
+    margin-right: 20%;
     font-weight: bold;
+    font-family: tahoma;
 }
 
 #jersey-size-list,
 #shorts-size-list {
     display: inline-block;
-    width: 35%;
     margin-right: 14px;
     margin-bottom: 20px;
 }
@@ -503,20 +558,78 @@ select {
 
 .form-title {
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 14pt;
 }
 
 #legal-paragraph {
-    width: 68%;
-    font-family: georgia;
+    font-size: 12pt;
+    font-family: 'Roboto';
     margin-bottom: 20px;
+    width: 600px;
+    font-weight: lighter;
+    text-align: justify;
 }
 
 #submit-button {
     width: 100px;
     height: 40px;
-    margin-left: 25%;
+
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+.container-form {
+    display: inline-block;
+}
+
+.clothes-sizes-tables label {
+    font-size: 9pt;
+}
+
+#jersey-size-list td,
+#shorts-size-list td {
+    
+    padding-right: 10px;
+}
+
+#jersey-size-list th,
+#shorts-size-list th {
+    min-width: auto;
+
+}
+
+#jersey-size-list,
+#shorts-size-list {
+    margin-left: 7%;
+    margin-right: 7%;
+    
+}
+
+#contact-phone {
+    margin-bottom: 20px;
+}
+
+#contact-email {
+width: 36.3%;
+}
+
+#Date {
+    width: 90px;
+
+}
+
+#parent-guardian-signature {
+    margin-right: 20px;
+    width: 40%;
+}
+
+#div-submit {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#grade-title {
+    margin-right: 7%;
 }
